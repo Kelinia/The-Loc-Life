@@ -4,7 +4,29 @@ body {
 }
 
 h1 {
-    font-size: 38px;
+    font-family: Papyrus, fantasy; 
+    font-style: normal;   
+    font-size: 55px;
+    font-variant: normal;
+    font-weight: 700;
     color: mediumseagreen;
+    line-height: 26.4px;
+}
 
+h2 {
+    font-family: Papyrus, fantasy; 
+    font-size: 35px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px; 
+}
+
+p { 
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; 
+	font-size: 20px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 400; 
+	line-height: 20px; 
 }
