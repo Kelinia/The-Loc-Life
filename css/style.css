@@ -1,41 +1,140 @@
-:root {
-    --primary-color: rgba(106, 90, 205, 0.4);
-    --overlay-color: rgba(102, 0, 255, 0.3);
-    --menu-speed: 0.75s;
-    }
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;   
+}
 
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
 
-    body {
-        font-family: 'Montserrat Alternates', sans-serif;
-        line-height: 1.4;
-    }
+body {
+    margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
 
-    .container {
-        max-width: 960;
-        margin: auto;
-        overflow: hidden;
-        padding: 0 3rem;
-    }
+/* Hamburger menu */
+nav {
+    background: mediumpurple;
+    padding: 5px 20px;
+}
 
-    .showcase {
-        background-color: var(--primary-color);
-        color: #fff;
-        height: 100vh;
-        position: relative;
-    }
+ul {
+    list-style-type: none;
+}
 
-    .showcase:before {
-        content: '';
-        background: url(../images/loclifelogo.jpg) no-repeat center center/cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 75%;
-        height: 75%;
-        z-index: -1;
-      }
+a {
+    color: darkmagenta;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+}
+
+.menu li a {
+    display: block;
+}
+
+.logo a {
+    font-size: 20px;
+}
+
+.button.secondary {
+    border-bottom: 1px #444 solid;
+}
+
+/* Mobile Menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle {
+
+}
+
+.bars {
+    background: mediumvioletred;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+.bars::before,.bars::after {
+    background: mediumvioletred;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;   
+}
+
+/* Overlay */
+.big-image {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(..//images/loclifelogo2-preview.png);
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .overlay h1 {
+    font-size: 65px;
+    letter-spacing: 0px;
+    margin: 0 0 5px;
+  }
+  
+  .overlay p {
+    margin: 0;
+    font-size: 28px;
+  }
+
+/* End of Overlay CSS */
+
+h1 {
+    font-family: 'Montserrat Alternates', sans-serif; 
+    font-style: normal;   
+    font-size: 55px;
+    font-variant: normal;
+    font-weight: 700;
+    color: goldenrod;
+    line-height: 25.4px;
+}
+
+h2 {
+    font-family: 'Montserrat Alternates', sans-serif; 
+    font-size: 35px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    color: purple;
+    line-height: 15.4px; 
+}
+
+p { 
+	font-family: 'Montserrat Alternates', sans-serif; 
+	font-size: 18px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 400; 
+    color: whitesmoke;
+	line-height: 50px; 
+}
