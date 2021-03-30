@@ -1,32 +1,41 @@
-body {
-    background-color: mediumorchid;
-    text-align: center;
-}
+:root {
+    --primary-color: rgba(106, 90, 205, 0.4);
+    --overlay-color: rgba(102, 0, 255, 0.3);
+    --menu-speed: 0.75s;
+    }
 
-h1 {
-    font-family: Papyrus, fantasy; 
-    font-style: normal;   
-    font-size: 55px;
-    font-variant: normal;
-    font-weight: 700;
-    color: mediumseagreen;
-    line-height: 26.4px;
-}
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-h2 {
-    font-family: Papyrus, fantasy; 
-    font-size: 35px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 700; 
-    line-height: 15.4px; 
-}
+    body {
+        font-family: 'Montserrat Alternates', sans-serif;
+        line-height: 1.4;
+    }
 
-p { 
-	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; 
-	font-size: 20px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 400; 
-	line-height: 20px; 
-}
+    .container {
+        max-width: 960;
+        margin: auto;
+        overflow: hidden;
+        padding: 0 3rem;
+    }
+
+    .showcase {
+        background-color: var(--primary-color);
+        color: #fff;
+        height: 100vh;
+        position: relative;
+    }
+
+    .showcase:before {
+        content: '';
+        background: url(..\images\loclifeb13.png) no-repeat center center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
