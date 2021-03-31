@@ -6,7 +6,8 @@
 
 
 body {
-    margin: 0;
+    display: block;
+    margin: 8px;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
@@ -52,25 +53,106 @@ a:hover {
     justify-content: space-between;
     align-items: center;
 }
-.toggle {
 
+.toggle {
+    order: 1;
+}
+
+.item.button {
+    order: 2;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    /* display: none; */
+}
+
+.item.active{
+    display: block;
+}
+
+
+
+
+.toggle {
+    cursor: pointer;
 }
 
 .bars {
-    background: mediumvioletred;
+    background: #4a235a;
     display: inline-block;
     height: 2px;
     position: relative;
     width: 18px;
 }
 .bars::before,.bars::after {
-    background: mediumvioletred;
+    background: #4a235a;
     content: "";
     display: inline-block;
     height: 2px;
-    position: relative;
+    position: absolute;
     width: 18px;   
 }
+
+.bars::before{
+    top: 5px;    
+}
+
+.bars::after {
+    top: -5px;
+}
+
+/* Tablet Menu */
+@media all and (min-width:468px) {
+    .menu {
+       justify-content: center; 
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .button.secondary {
+        border: 0;
+    }
+
+    .button a {
+        padding: 7px 15px;
+        background: #f4d03f;
+        border: 1px solid #f1c40f;
+        border-radius: 50em;
+    }
+
+    .button.secondary a {
+        background: transparent;
+    }
+
+    .button a:hover {
+        transition: all .25s;
+    }
+
+    .button:not(.secondary) a:hover{
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Overlay */
 .big-image {
@@ -97,14 +179,20 @@ a:hover {
   }
   
   .overlay h1 {
-    font-size: 65px;
+    font-size: 40px;
+    letter-spacing: 0px;
+    margin: 0 0 5px;
+  }
+
+  .overlay h2 {
+    font-size: 25px;
     letter-spacing: 0px;
     margin: 0 0 5px;
   }
   
   .overlay p {
-    margin: 0;
-    font-size: 28px;
+    margin: 15px;
+    font-size: 22px;
   }
 
 /* End of Overlay CSS */
@@ -112,7 +200,6 @@ a:hover {
 h1 {
     font-family: 'Montserrat Alternates', sans-serif; 
     font-style: normal;   
-    font-size: 55px;
     font-variant: normal;
     font-weight: 700;
     color: goldenrod;
@@ -120,8 +207,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Montserrat Alternates', sans-serif; 
-    font-size: 35px; 
+    font-family: 'Montserrat Alternates', sans-serif;  
     font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
@@ -131,7 +217,6 @@ h2 {
 
 p { 
 	font-family: 'Montserrat Alternates', sans-serif; 
-	font-size: 18px; 
 	font-style: normal; 
 	font-variant: normal; 
 	font-weight: 400; 
