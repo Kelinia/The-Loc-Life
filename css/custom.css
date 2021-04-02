@@ -1,4 +1,23 @@
+/* Media Queries */
+@media (min-width: 592px) {
+  .overlay h1 {
+    float: left;
+    padding: auto;
+  }
 
+  .small {
+    float: right;
+    width: 150px;
+    padding: 10px;
+  }
+}
+@media (min-width: 1000px) and (max-width:1600) {
+  .small {
+    float: right;
+    width: 350px;
+    padding: 20px;
+  }
+}
 /* Overlay */
 .big-image {
     height: 100vh;
@@ -22,7 +41,7 @@
     justify-content: center;
     flex-direction: column;
   }
-  /* End of Overlay CSS */
+ 
   
   .overlay h1 {
     font-size: 20px;
@@ -41,7 +60,7 @@
     font-size: 22px;
   }
 
-
+/* End of Overlay */
 
 .small {
     width: 200px;
