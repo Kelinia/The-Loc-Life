@@ -1,5 +1,5 @@
 /* Media Queries */
-@media (min-width: 592px) {
+@media screen and (max-width: 992px) and (min-width: 600px) {
   .overlay h1 {
     float: left;
     padding: auto;
@@ -10,14 +10,35 @@
     width: 150px;
     padding: 10px;
   }
+
+  .navbar-brand {
+    display: none;
+  }
 }
-@media (min-width: 1000px) and (max-width:1600) {
+
+@media screen and(max-width:1600) and (min-width: 1000px) {
   .small {
     float: right;
     width: 350px;
-    padding: 20px;
+    padding: 60px;
+  }
+
+  .navbar-brand {
+    display:none;
   }
 }
+@media screen and (max-width: 1500px) and (min-width: 600px) {
+  h1 {
+    color: gold;
+    font-size: 20px;
+  }
+  
+
+}
+/* end of queries */
+
+
+
 /* Overlay */
 .big-image {
     height: 100vh;
@@ -61,6 +82,12 @@
   }
 
 /* End of Overlay */
+
+img {
+  vertical-align: -22px;
+  border-style: none;
+  margin: 30px;
+}  
 
 .small {
     width: 200px;

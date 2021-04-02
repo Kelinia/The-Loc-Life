@@ -1,3 +1,4 @@
 # capstone-The-Loc-Life
   This project is a mock website for my business as a natural hairstylist for dreadlocks(to be continually labeled as "locs").
 I used Bootstrap For my CSS, which I also used to create a navigation bar with a hamburger menu. On the "Transformations" page, if you click on the image you get to see what the hair looks like after they had be serviced by me. This feature is done per JavaScript. NOTE: Due to a lot of changes made on the last week to the 'index.html' file, the actual website starts with the 'home.html' file. My intention with the media queries is to give the elements a bit more extra spacing when on medium and large screens. When using Bootstrap the code is already set to operate as "mobile-first", so my media queries are for a tablet and a desktop, so that you get a differemt view, depending on the size screen.
+NOTE: all images are stock photos. images coming soon.
