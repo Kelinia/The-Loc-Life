@@ -22,23 +22,28 @@
     justify-content: center;
     flex-direction: column;
   }
+  /* End of Overlay CSS */
   
   .overlay h1 {
-    font-size: 40px;
+    font-size: 20px;
     letter-spacing: 0px;
-    margin: 0 0 5px;
+    margin: 15px 0 6px;
   }
 
-  .overlay h2 {
-    font-size: 25px;
+   .overlay h2 {
+    font-size: 15px;
     letter-spacing: 0px;
     margin: 0 0 5px;
   }
   
-  .overlay p {
-    margin: 15px;
+   .overlay p {
+    margin: 5px;
     font-size: 22px;
   }
 
-/* End of Overlay CSS */
 
+
+.small {
+    width: 200px;
+    padding: 20px;
+  }
